@@ -12,12 +12,12 @@ public class Main {
         }
         // Task 2
         System.out.println("task 2");
-        int clientDevviceYear = 2015;
-        if (osType == 0 && clientDevviceYear < 2015) {
+        int clientDeviceYear = 2015;
+        if (osType == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         } else if (osType == 0) {
             System.out.println("УУстановите версию приложения  для iOS по ссылке");
-        } else if (clientDevviceYear < 2015) {
+        } else if (clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else {
             System.out.println("Установите версию приложения для Android по ссылке");
@@ -47,30 +47,30 @@ public class Main {
         }
         // Task 5
         System.out.println("task 5");
-        int montNumber = 12;
-        if (montNumber < 1 || montNumber > 12) {
+        int monthNumber = 12;
+        if (monthNumber < 1 || monthNumber > 12) {
             System.out.println("Некорректный номер месяца");
         } else {
-            switch (montNumber) {
+            switch (monthNumber) {
                 case 1:
                 case 2:
                 case 12:
-                    System.out.println(montNumber + "-й месяц принадлежит к сезону зима");
+                    System.out.println(monthNumber + "-й месяц принадлежит к сезону зима");
                     break;
                 case 3:
                 case 4:
                 case 5:
-                    System.out.println(montNumber + "-й месяц принадлежит к сезону весна");
+                    System.out.println(monthNumber + "-й месяц принадлежит к сезону весна");
                     break;
                 case 6:
                 case 7:
                 case 8:
-                    System.out.println(montNumber + "-й месяц пренадлежит к сезону лето");
+                    System.out.println(monthNumber + "-й месяц пренадлежит к сезону лето");
                     break;
                 case 9:
                 case 10:
                 case 11:
-                    System.out.println(montNumber + "-й месяц пренадлежит к сезону осень");
+                    System.out.println(monthNumber + "-й месяц пренадлежит к сезону осень");
             }
         }
 
