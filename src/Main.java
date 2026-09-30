@@ -4,22 +4,20 @@ public class Main {
     public static void main(String[] args) {
         // Task 1
         System.out.println("task 1");
-        int clientOS = 2;
-        if (clientOS == 0) {
+        int osType = 1;
+        if (osType == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == 1) {
-            System.out.println("Установите версию приложения для Android по ссылке");
         } else {
-            System.out.println("Неверное значение");
+            System.out.println("Установите версию приложения для Android по ссылке");
         }
         // Task 2
         System.out.println("task 2");
-        int clientDevviceYear = 2015;
-        if (clientOS == 0 && clientDevviceYear < 2015) {
+        int clientDeviceYear = 2015;
+        if (osType == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0) {
+        } else if (osType == 0) {
             System.out.println("УУстановите версию приложения  для iOS по ссылке");
-        } else if (clientDevviceYear < 2015) {
+        } else if (clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else {
             System.out.println("Установите версию приложения для Android по ссылке");
@@ -49,33 +47,34 @@ public class Main {
         }
         // Task 5
         System.out.println("task 5");
-        int montNumber = 10;
-        switch (montNumber) {
-            case 1:
-            case 2:
-            case 12:
-                System.out.println(montNumber + "-й месяц принадлежит к сезону зима");
-                break;
-            case 3:
-            case 4:
-            case 5:
-                System.out.println(montNumber + "-й месяц принадлежит к сезону весна");
-                break;
-            case 6:
-            case 7:
-            case 8:
-                System.out.println(montNumber + "-й месяц пренадлежит к сезону лето");
-                break;
-            case 9:
-            case 10:
-            case 11:
-                System.out.println(montNumber + "-й месяц пренадлежит к сезону осень");
-                break;
-            default:
-                System.out.println("Некорректный месяц");
+        int monthNumber = 12;
+        if (monthNumber < 1 || monthNumber > 12) {
+            System.out.println("Некорректный номер месяца");
+        } else {
+            switch (monthNumber) {
+                case 1:
+                case 2:
+                case 12:
+                    System.out.println(monthNumber + "-й месяц принадлежит к сезону зима");
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    System.out.println(monthNumber + "-й месяц принадлежит к сезону весна");
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    System.out.println(monthNumber + "-й месяц пренадлежит к сезону лето");
+                    break;
+                case 9:
+                case 10:
+                case 11:
+                    System.out.println(monthNumber + "-й месяц пренадлежит к сезону осень");
+            }
         }
 
     }
-
 }
+
 
